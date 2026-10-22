@@ -1,0 +1,15 @@
+# Configuracion de Bandit
+
+exclude_dirs:
+  - tests
+  - .venv
+
+tests:
+  - B104
+  - B105
+  - B106
+  - B107
+  - B108
+  - B605
+  - B608
+  - B324

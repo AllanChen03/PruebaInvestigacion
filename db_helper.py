@@ -11,7 +11,7 @@ class DbHelper:
         self.host = '10.0.0.99'
         self.port = 3306
         self.user = 'MyDbUser'
-        self.password = 'M1DbPassword'
+        self.password = os.getenv("DB_PASSWORD")
 
 
     def initialize(self):

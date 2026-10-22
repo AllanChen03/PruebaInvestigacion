@@ -1,0 +1,8 @@
+# Configuracion de Bandit
+
+exclude_dirs:
+  - tests
+  - .venv
+
+tests:
+  - B605

@@ -1,0 +1,6 @@
+rules:
+  - id: revisar-escape-html-desactivado
+    languages: [generic]
+    severity: ERROR
+    message: "Se encontro una plantilla que tiene desactivado el escape automatico de HTML. Esto puede permitir que el navegador interprete codigo HTML o JavaScript ingresado por un usuario, lo que podria provocar un ataque XSS."
+    pattern-regex: '\{%\s*autoescape\s+(?:false|off)\s*%\}'
